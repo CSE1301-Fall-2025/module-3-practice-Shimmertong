@@ -1,6 +1,6 @@
 package pastexam.codewriting;
 
-import java.util.Scanner;
+
 
 public class Q10 {
 
@@ -30,6 +30,18 @@ public class Q10 {
 		//and columns to make sure your solution
 		//works properly.
 		int[][] data = { {1, 2, 3}, {4, 5, 6}, {7, 8, 9} }; 
-		
+        int sum = 0;
+		for(int i = 0; i < data.length; i++){
+			for(int j = 0; j < data[0].length; j++){
+				if(i == j){
+					sum += data[i][j];}
+				if(i + j == 2){
+					sum += data[i][j];
+
+
+				}
+			}
+		}
+		System.out.println(sum);
 	}
 }

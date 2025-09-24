@@ -1,6 +1,6 @@
 package pastexam.codewriting;
 
-import java.util.Scanner;
+
 
 public class Q14 {
 
@@ -28,6 +28,19 @@ public class Q14 {
 		//to make sure your solution
 		//works properly.
 		int[] data = {1, 2, 3}; 
+
+		int length = 2 * (data.length);
+		int[] array = new int[length];
+		for(int a = 0; a < data.length; a++){
+			array[a] = data[a];
+		}
+		for(int b = data.length; b < length; b++){
+			array[b] = data[length - 1 - b];
+		}
+
+		for(int index = 0; index < length; index++){
+			System.out.print(array[index] + " ");
+		}
 		
 	}
 }

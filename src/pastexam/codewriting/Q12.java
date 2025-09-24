@@ -1,6 +1,6 @@
 package pastexam.codewriting;
 
-import java.util.Scanner;
+
 
 public class Q12 {
 
@@ -29,6 +29,19 @@ public class Q12 {
 		//and columns to make sure your solution
 		//works properly.
 		int[][] data = { {1, 2, 3}, {4, 5, 6} }; 
+
+		int col = data[0].length;
+		int[] sum = new int[col];
+		for(int j = 0; j < data[0].length; j++){
+			for(int i = 0; i < data.length; i++){
+				sum[j] += data[i][j];
+			}
+		}
+
+		for(int index = 0; index < col; index++){
+			System.out.print(sum[index] + " ");
+		}
+		
 		
 	}
 }

@@ -1,6 +1,6 @@
 package pastexam.codewriting;
 
-import java.util.Scanner;
+
 
 public class Q08 {
 
@@ -33,6 +33,22 @@ public class Q08 {
 		//and columns to make sure your solution
 		//works properly.
 		int[][] data = { {1, 2, 3}, {4, 5, 6} }; 
+		int row = data.length;
+		int col = data[0].length;
+		int[][] after = new int[col][row];
+		for(int i = 0; i < row; i++){
+			for(int j = 0; j < col; j++){
+				after[j][i] = data[i][j];  
+			}
+		}
+
+		for(int a = 0; a < col; a++){
+			for(int b = 0; b < row; b++){
+				System.out.print(after[a][b] + " ");
+			}
+			System.out.println();
+		}
+
 		
 	}
 }
